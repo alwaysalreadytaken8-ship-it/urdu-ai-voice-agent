@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="ur">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <title>Urdu AI Voice Agent</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div class="logo">🎙️</div>
+      <div>
+        <h1>Urdu AI Voice Agent</h1>
+        <p>Roman Urdu mein baat karein</p>
+      </div>
+      <span class="pill"><i></i> Ready</span>
+    </header>
+
+    <section class="hero">
+      <div class="orb">🤖</div>
+      <h2>Assalam-o-alaikum!</h2>
+      <p>Main aap ka AI voice assistant hoon. Sawal type karein ya microphone dabayein.</p>
+    </section>
+
+    <section id="chat" class="chat" aria-live="polite">
+      <div class="bubble assistant"><b>Agent</b><p>Yaar, kya haal hai? Aaj main aap ki kya madad kar sakta hoon?</p></div>
+    </section>
+
+    <div class="status" id="status">Ready — neeche sawal likhein ya mic dabayein.</div>
+    <form id="chatForm">
+      <textarea id="message" rows="2" maxlength="4000" placeholder="Yahan Roman Urdu mein likhein..." aria-label="Aap ka sawal"></textarea>
+      <div class="controls">
+        <button type="button" id="micBtn" class="mic" title="Bol kar sawal karein">🎤 <span>Bol kar poochhein</span></button>
+        <label class="speak-toggle"><input type="checkbox" id="autoSpeak" checked> Jawab awaaz mein sunao</label>
+        <button type="submit" id="sendBtn" class="send">Send ➤</button>
+      </div>
+    </form>
+    <footer>AI jawab ghalat bhi ho sakte hain. Microphone ke liye browser permission zaroori hai.</footer>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
